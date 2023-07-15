@@ -1,6 +1,6 @@
-import '@/styles/globals.css'
+import '../styles/globals.css'
 
-import { Navbar } from '@/components/componentsIndex'
+import { Navbar } from '../components/componentsIndex'
 
 const MyApp = ({ Component, pageProps }) => (
   <div>

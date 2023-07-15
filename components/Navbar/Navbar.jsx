@@ -24,17 +24,28 @@ const Navbar = () => {
         const btnText = e.target.innerText;
 
         if (btnText == "Discover") {
-            setDiscover(true);
-            setHelp(false);
-            setNotification(false);
-            setProfile(false);
-            setOpenSideMenu(false)
+            if (discover) {
+                setDiscover(false)
+            } else {
+                setDiscover(true);
+                setHelp(false);
+                setNotification(false);
+                setProfile(false);
+                setOpenSideMenu(false)
+            }
+
         } else if (btnText == "Help Center") {
-            setDiscover(false);
-            setHelp(true);
-            setNotification(false);
-            setProfile(false);
-            setOpenSideMenu(false)
+            if (help) {
+                setHelp(false)
+            } else {
+                setDiscover(false);
+                setHelp(true);
+                setNotification(false);
+                setProfile(false);
+                setOpenSideMenu(false)
+            }
+
+
         }
     }
 
@@ -97,19 +108,23 @@ const Navbar = () => {
             <div className={Style.navbar_container_right}>
                 <div className={Style.navbar_container_right_discover}>
                     <p onClick={(e) => openMenu(e)}>Discover</p>
-                    {discover && (
-                        <div className={Style.navbar_container_right_discover_box}>
-                            <Discover />
-                        </div>
-                    )}
+                    {
+                        discover && (
+                            <div className={Style.navbar_container_right_discover_box}>
+                                <Discover />
+                            </div>
+                        )
+                    }
                 </div>
                 <div className={Style.navbar_container_right_help}>
                     <p onClick={(e) => openMenu(e)}>Help Center</p>
-                    {help && (
-                        <div className={Style.navbar_container_right_help_box}>
-                            <Helpcenter />
-                        </div>
-                    )}
+                    {
+                        help && (
+                            <div className={Style.navbar_container_right_help_box}>
+                                <Helpcenter />
+                            </div>
+                        )
+                    }
                 </div>
                 <div className={Style.navbar_container_right_notify}>
                     <MdNotifications
@@ -125,14 +140,15 @@ const Navbar = () => {
 
                 <div className={Style.navbar_container_right_profile_box}>
                     <div className={Style.navbar_container_right_profile}>
-                        <Image
+                        {/* <Image
                             src={images.user1}
                             alt="Profile"
                             width={40}
                             height={40}
                             onClick={() => openProfile()}
                             className={Style.navbar_container_right_profile}
-                        />
+                        /> */}
+                        <p onClick={() => { openProfile() }}>Profile</p>
                         {profile && <Profile />}
                     </div>
                 </div>
