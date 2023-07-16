@@ -153,7 +153,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={Style.navbar_container_right_menu_button}>
+                <div className={Style.navbar_container_right_menuBtn}>
                     <CgMenuRight className={Style.menuIcon}
                         onClick={() => openSideBar()}
                     />
