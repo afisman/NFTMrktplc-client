@@ -136,8 +136,13 @@ const Sidebar = ({ setOpenSideMenu }) => {
             <div className={Style.sideBar_menu}>
                 <div>
                     <div className={Style.sideBar_menu_box} onClick={() => openDiscoverMenu()}>
-                        <p>Discover</p>
-                        <TiArrowSortedDown />
+                        Discover
+                        {!openDiscover
+                            ?
+                            <TiArrowSortedDown />
+                            :
+                            <TiArrowSortedUp />
+                        }
                     </div>
                     {
                         openDiscover && (
@@ -154,8 +159,13 @@ const Sidebar = ({ setOpenSideMenu }) => {
 
                 <div>
                     <div className={Style.sideBar_menu_box} onClick={() => openHelpMenu()}>
-                        <p>Help Center</p>
-                        <TiArrowSortedDown />
+                        Help Center
+                        {!openHelp
+                            ?
+                            <TiArrowSortedDown />
+                            :
+                            <TiArrowSortedUp />
+                        }
                     </div>
                     {
                         openHelp && (
@@ -172,8 +182,8 @@ const Sidebar = ({ setOpenSideMenu }) => {
             </div>
 
             <div className={Style.sideBar_button}>
-                <Button btnName="Create" />
-                <Button btnName="Connect wallet" />
+                <Button btnName="Create" handleClick={() => { }} />
+                <Button btnName="Connect wallet" handleClick={() => { }} />
 
             </div>
         </div>
