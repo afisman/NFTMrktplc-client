@@ -61,15 +61,21 @@ const Footer = () => {
                     <Helpcenter />
                 </div>
 
-                <div className={Style.subscribe_box}>
-                    <input type='email' placeholder='Enter your email *' />
-                    <RiSendPlaneFill className={Style.subscribe_box_send} />
-                </div>
+                <div className={Style.subscribe}>
+                    <h3>
+                        Subscribe
+                    </h3>
 
-                <div className={Style.subscribe_box_info}>
-                    <p>
-                        Discover, collect and sell extraordinary NFTs.
-                    </p>
+                    <div className={Style.subscribe_box}>
+                        <input type='email' placeholder='Enter your email *' />
+                        <RiSendPlaneFill className={Style.subscribe_box_send} />
+                    </div>
+
+                    <div className={Style.subscribe_box_info}>
+                        <p>
+                            Discover, collect and sell extraordinary NFTs.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
