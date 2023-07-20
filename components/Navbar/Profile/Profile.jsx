@@ -7,26 +7,27 @@ import { TbDownloadOff, TbDownload } from 'react-icons/tb'
 
 import Style from './Profile.module.css'
 import Link from 'next/link'
-// import images when available
+import images from '../../../img'
+
 
 
 const Profile = () => {
     return (
         <div className={Style.profile}>
             <div className={Style.profile_account}>
-                {/* <Image
+                <Image
                     src={images.user1}
                     alt='user profile'
                     width={50}
                     height={50}
                     className={Style.profile_account_img}
-                /> */}
+                />
 
                 <div className={Style.profile_account_info}>
                     <p>
                         Alef Tau
                     </p>
-                    <small>0x42314cuiqwhe3891ehdsandcjsdh813sqadkjla21342</small>
+                    <small>0x42314cui</small>
 
                 </div>
 

@@ -1,13 +1,14 @@
 import React from 'react';
 
 import Style from '../styles/index.module.css';
-import { HeroSection, Service } from '../components/componentsIndex';
+import { HeroSection, Service, NFTSlider } from '../components/componentsIndex';
 
 const Home = () => {
   return (
     <div className={Style.homePage}>
       <HeroSection />
       <Service />
+      <NFTSlider />
     </div>
   )
 }
