@@ -38,7 +38,7 @@ const NFTSlider = () => {
             price: "00000074664 ETH",
             like: 142,
             image: images.user1,
-            nftImage: images.nft_image_1,
+            nftImage: images.nft_image_2,
             time: {
                 days: 27,
                 hours: 10,
