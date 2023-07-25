@@ -18,7 +18,7 @@ const Category = () => {
                             alt='Category image'
                             width={350}
                             height={150}
-                            objectFit='cover'
+                        // objectFit='cover'
                         />
 
                         <div className={Style.category_box_title}>

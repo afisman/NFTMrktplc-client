@@ -9,10 +9,17 @@ import images from '../../img';
 const NFTCard = () => {
     const featureArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-    const [like, setLike] = useState(true);
+    const [like, setLike] = useState(false);
 
     const likeNft = () => {
 
+        if (!like) {
+            console.log('I am liking');
+            setLike(true);
+        } else {
+            console.log('I am removing like');
+            setLike(false);
+        }
     }
     return (
         <div className={Style.NFTCard}>
@@ -25,8 +32,8 @@ const NFTCard = () => {
                             <Image
                                 src={images.nft_image_1}
                                 alt='NFTimages'
-                                width={600}
-                                height={600}
+                                // width={600}
+                                // height={600}
                                 className={Style.NFTCard_box_img_img}
                             />
                         </div>
@@ -37,15 +44,42 @@ const NFTCard = () => {
                                 >
                                     {
                                         like ? (
-                                            <AiFillHeart />
+                                            <AiFillHeart className={Style.NFTCard_box_update_left_like_icon} />
                                         )
                                             :
                                             (
-                                                <AiOutlineHeart className={Style.NFTCard_box_update_left_like_icon} />
+                                                <AiOutlineHeart />
                                             )
                                     }
                                     {""} 22
                                 </div>
+                            </div>
+
+                            <div className={Style.NFTCard_box_update_right}>
+                                <div className={Style.NFTCard_box_update_right_info}>
+                                    <small>Remaining time</small>
+                                    <p>3h : 15m: 22s</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={Style.NFTCard_box_update_details}>
+                            <div className={Style.NFTCard_box_update_details_price}>
+                                <div className={Style.NFTCard_box_update_details_price_box}>
+                                    <h4>FF #2248</h4>
+
+                                    <div className={Style.NFTCard_box_update_details_price_box_box}>
+                                        <div className={Style.NFTCard_box_update_details_price_box_bid}>
+                                            <small>Current Bid</small>
+                                            <p>1.000 ETH</p>
+                                        </div>
+                                        <div className={Style.NFTCard_box_update_details_price_box_stock}>
+                                            <small>63 in stock</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={Style.NFTCard_box_update_details_category}>
+                                <BsImages />
                             </div>
                         </div>
                     </div>
