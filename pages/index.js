@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Style from '../styles/index.module.css';
-import { HeroSection, Service, NFTSlider, Subscribe, Title, Category, Filter, NFTCard, Collection } from '../components/componentsIndex';
+import { HeroSection, Service, NFTSlider, Subscribe, Title, Category, Filter, NFTCard, Collection, FollowerTab } from '../components/componentsIndex';
 
 const Home = () => {
   return (
@@ -9,9 +9,8 @@ const Home = () => {
       <HeroSection />
       <Service />
       <NFTSlider />
-      <Title heading='Filter by collection'
-        paragraph='Explore thebest collections from the best authors.'
-      />
+
+      <FollowerTab />
       <Collection />
       <Title heading='Featured NFTs'
         paragraph='Explore the NFTs in the most featured categories.'

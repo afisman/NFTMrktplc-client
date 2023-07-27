@@ -23,7 +23,7 @@ const DaysComponents = () => {
                         src={images.nft_image_1}
                         alt='profile'
                         width={200}
-                        height={200}
+                        height={150}
                         className={Style.daysComponent_box_img_1}
                     // objectFit='cover'
                     />
@@ -31,7 +31,7 @@ const DaysComponents = () => {
                         src={images.nft_image_1}
                         alt='profile'
                         width={200}
-                        height={200}
+                        height={150}
                         className={Style.daysComponent_box_img_2}
                     // objectFit='cover'
                     />
@@ -39,7 +39,7 @@ const DaysComponents = () => {
                         src={images.nft_image_1}
                         alt='profile'
                         width={200}
-                        height={200}
+                        height={150}
                         className={Style.daysComponent_box_img_3}
                     // objectFit='cover'
                     />
@@ -57,11 +57,11 @@ const DaysComponents = () => {
                                 className={Style.daysComponent_box_title_info_profile_img}
                             />
                             <p>Creator
-                                <span>Alef Tau</span>
+                                <span> {" "}Alef Tau</span>
                                 <small><MdVerified /></small>
                             </p>
                         </div>
-                        <div className={Style.daysComponent_box_title_info_profile}>
+                        <div className={Style.daysComponent_box_title_info_price}>
                             <small>1.333 ETH</small>
                         </div>
                     </div>
