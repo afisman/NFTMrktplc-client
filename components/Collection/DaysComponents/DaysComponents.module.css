@@ -1,5 +1,5 @@
 .daysComponent {
-    width: 80%;
+    width: 100%;
     border-radius: 1rem;
     transition: all .3s ease-in;
     cursor: pointer;
@@ -49,6 +49,10 @@
     line-height: 0;
 }
 
+.daysComponent_box_title h2 {
+    font-size: 1.2rem;
+}
+
 .daysComponent_box_title_info {
     display: flex;
     justify-content: space-between;
@@ -60,18 +64,24 @@
 }
 
 .daysComponent_box_title_info_profile span {
-    font-weight: 600;
+    font-weight: 400;
+    font-size: .8rem;
     padding-inline: .5rem;
 }
 
 .daysComponent_box_title_info_price small {
+    overflow: hidden;
     font-weight: 600;
     border: 3px solid var(--icons-color);
     padding: .5rem;
     border-radius: .5rem;
+    text-overflow: ellipsis;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+@media screen
+
+/* and (min-device-width: 320px) */
+and (max-device-width: 768px) {
     .daysComponent_box_profile {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -87,3 +97,20 @@
         padding: 1rem;
     }
 }
+
+/* @media screen and (min-device-width: 770px) and (max-device-width: 1200px) {
+    .daysComponent_box_profile {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .daysComponent_box_title_info {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .daysComponent_box_title {
+        padding: 1rem;
+    }
+} */

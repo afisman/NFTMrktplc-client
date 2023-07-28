@@ -41,18 +41,20 @@ const FollowerTab = () => {
     return (
         <div className={Style.followerTab}>
             <div className={Style.followerTab_box}>
-                <h2>Top Creators List..</h2>
-                <div className={Style.followerTab_tabs}>
-                    <div className={Style.followerTab_tabs_btn}>
-                        <button onClick={() => openPopular()}>
-                            <RiUserFollowFill /> Popular
-                        </button>
-                        <button onClick={() => openFollower()}>
-                            <RiUserFollowFill /> Following
-                        </button>
-                        <button onClick={() => openNews()}>
-                            <RiAwardLine /> News
-                        </button>
+                <div className={Style.followerTab_title}>
+                    <h2 >Top Creators List..</h2>
+                    <div className={Style.followerTab_tabs}>
+                        <div className={Style.followerTab_tabs_btn}>
+                            <button onClick={() => openPopular()}>
+                                <RiUserFollowFill /> Popular
+                            </button>
+                            <button onClick={() => openFollower()}>
+                                <RiUserFollowFill /> Following
+                            </button>
+                            <button onClick={() => openNews()}>
+                                <RiAwardLine /> News
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

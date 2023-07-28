@@ -25,7 +25,6 @@ const DaysComponents = () => {
                         width={200}
                         height={150}
                         className={Style.daysComponent_box_img_1}
-                    // objectFit='cover'
                     />
                     <Image
                         src={images.nft_image_1}
@@ -33,7 +32,6 @@ const DaysComponents = () => {
                         width={200}
                         height={150}
                         className={Style.daysComponent_box_img_2}
-                    // objectFit='cover'
                     />
                     <Image
                         src={images.nft_image_1}
@@ -41,7 +39,6 @@ const DaysComponents = () => {
                         width={200}
                         height={150}
                         className={Style.daysComponent_box_img_3}
-                    // objectFit='cover'
                     />
 
                 </div>
