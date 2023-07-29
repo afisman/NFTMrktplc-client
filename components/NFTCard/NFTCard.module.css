@@ -11,7 +11,9 @@
     background-color: var(--shadow-light-color);
     padding: 1rem;
     border-radius: 1rem;
-
+    width: 90%;
+    height: auto;
+    object-fit: cover;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -87,7 +89,8 @@
 
 .NFTCard_box_img_img {
     border-radius: 1rem;
-    transition: all .4s ease-in;
+    width: 100%;
+    height: auto;
 }
 
 .NFTCard_box_update_details {

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import Style from './HeroSection.module.css';
 import { Button } from '../componentsIndex';
-// import images from '../../img';
+import images from '../../img';
 
 
 const HeroSection = () => {
@@ -20,12 +20,13 @@ const HeroSection = () => {
                     <Button btnName='Start your search' handleClick={() => { }} />
                 </div>
                 <div className={Style.heroSection_box_right}>
-                    {/* <Image
-                        src={images.hero}
+                    <Image
+                        className={Style.heroSection_box_right_img}
+                        src={images.user1}
                         alt='Hero section'
-                        width={600}
-                        height={600}
-                    /> */}
+                    // width={600}
+                    // height={600}
+                    />
                 </div>
             </div>
         </div>
