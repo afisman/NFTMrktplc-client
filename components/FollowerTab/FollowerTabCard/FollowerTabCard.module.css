@@ -33,7 +33,6 @@
 
 .followerTabCard_box_img {
     grid-column: 1/ -1;
-
 }
 
 .followerTabCard_box_img_img {
@@ -51,19 +50,81 @@
 }
 
 .followerTabCard_box_profile_img {
+    align-items: center;
     border-radius: 50%;
     padding: 1rem;
     z-index: 22222;
+    position: relative;
 }
 
 .followerTabCard_box_profile::before {
-    z-index: auto;
+    text-align: center;
     position: absolute;
     content: "";
     width: 5rem;
     height: 5rem;
     background-color: var(--main-bg-color);
     border-radius: 50%;
-    top: -20%;
+    top: -10%;
     left: 38%;
+}
+
+.followerTabCard_box_info {
+    grid-column: 1/ -1;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    justify-content: space-between;
+    margin-top: -1rem;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+}
+
+.followerTabCard_box_info h4 {
+    font-size: 1rem;
+    line-height: 0;
+}
+
+.followerTabCard_box_info_following a {
+    background-color: var(--shadow-dark-color);
+    padding: .7rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--shadow-dark-color);
+    transition: all .3s ease-in;
+}
+
+.followerTabCard_box_info_following a:hover {
+    background-color: transparent;
+}
+
+@media screen and (max-device-width: 375px) {
+    .followerTabCard_box_profile::before {
+        left: 38%;
+    }
+
+    .followerTabCard_box_info {
+        padding-inline: 2rem;
+    }
+
+    .followerTabCard_box_img_img {
+        height: 200;
+    }
+}
+
+@media screen and (min-device-width: 377px) and (max-device-width: 425px) {
+    .followerTabCard_box_profile::before {
+        left: 39.5%;
+    }
+}
+
+@media screen and (min-device-width: 427px) and (max-device-width: 768px) {
+    .followerTabCard_box_profile::before {
+        left: 39.5%;
+    }
+}
+
+@media screen and (min-device-width: 770px) and (max-device-width: 1024px) {
+    .followerTabCard_box_profile::before {
+        left: 42%;
+    }
 }
