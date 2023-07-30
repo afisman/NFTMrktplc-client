@@ -119,7 +119,7 @@
 
 @media screen and (min-device-width: 427px) and (max-device-width: 768px) {
     .followerTabCard_box_profile::before {
-        left: 39.5%;
+        left: 41%;
     }
 }
 

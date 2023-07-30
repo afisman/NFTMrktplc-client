@@ -62,7 +62,9 @@
     transition: all .3s ease-in;
 }
 
-.followerTab_member {}
+.followerTab_member {
+    text-align: center;
+}
 
 .followerTab_member_box {
     margin: 0 auto;
