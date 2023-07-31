@@ -1,0 +1,48 @@
+.bigAudioCard {}
+
+.bigAudioCard_box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.bigAudioCard_box_like {
+    background-color: var(--icons-color);
+    color: var(--shadow-dark-color);
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.bigAudioCard_box_like_icon,
+.bigAudioCard_box_like_icon_unlike {
+    color: red;
+    font-size: 2rem;
+}
+
+
+.bigAudioCard_box_like_time {
+    grid-column: 1/ -1;
+    grid-row: 1/ 2;
+
+    display: flex;
+    justify-content: space-between;
+    line-height: 0;
+    z-index: 1111;
+}
+
+.bigAudioCard_box_time {
+    background-color: var(--icons-color);
+    color: var(--main-bg-color);
+    padding: 1rem;
+
+}
