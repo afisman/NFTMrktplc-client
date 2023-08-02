@@ -41,8 +41,79 @@
 }
 
 .bigAudioCard_box_time {
-    background-color: var(--icons-color);
-    color: var(--main-bg-color);
-    padding: 1rem;
+    background-color: var(--main-bg-color);
+    padding: 1rem 4.5rem;
+    margin-right: -1.4rem;
+    transform: skewX(35deg);
+    border-bottom-left-radius: 1rem;
+}
 
+.bigAudioCard_box_time_remaining {
+    transform: skewX(-35deg);
+    text-align: center;
+
+}
+
+.bigAudioCard_box_time_remaining small {
+    font-weight: 500;
+}
+
+.bigAudioCard_box_time_remaining h5 {
+    font-size: 1.5rem;
+    margin-top: 1.6rem;
+}
+
+.bigAudioCard_box_player {
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+
+    display: flex;
+    padding-inline: 3rem;
+    gap: 4rem;
+    z-index: 11111;
+    align-items: center;
+}
+
+.bigAudioCard_box_musicPlayer_icon {
+    padding: 1.3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--main-bg-color);
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.bigAudioCard_box_img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.bigAudioCard_box_details {
+    grid-column: 1 / -1;
+    grid-row: 5 / -1;
+    z-index: 1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    padding: 1rem 0;
+    width: 90%;
+    border-top-right-radius: 2rem;
+    padding: 2rem;
+    line-height: .1rem;
+}
+
+.bigAudioCard_box_details_info h4 {
+    font-size: 1.1rem;
+    line-height: 0;
+}
+
+.bigAudioCard_box_details_info_price {
+    border: 1px solid var(--icons-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    height: 3rem;
+    cursor: pointer;
 }
