@@ -51,11 +51,14 @@ const BigAudioCard = () => {
                         src={images.nft_image_1}
                         alt='music'
                         width={200}
-                        height={200}
+
+                        className={Style.bigAudioCard_box_player_img}
+
                     />
                     <div className={Style.bigAudioCard_box_musicPlayer}
                         onClick={() => playMusic()}
                     >
+                        {/* Check 7:20 */}
                         {play ? (
                             <div className={Style.bigAudioCard_box_musicPlayer_icon}>
                                 <TbPlayerPause />
@@ -85,8 +88,8 @@ const BigAudioCard = () => {
                 <Image
                     src={images.user1}
                     alt='background'
-                    width={500}
-                    height={500}
+                    // width={500}
+                    // height={500}
                     className={Style.bigAudioCard_box_img_img}
                 />
             </div>

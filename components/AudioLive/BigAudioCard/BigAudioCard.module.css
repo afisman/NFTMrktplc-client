@@ -5,6 +5,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 1rem;
+    overflow: hidden;
 
     border-radius: 2rem;
     box-shadow: var(--box-shadow);
@@ -64,13 +65,14 @@
 }
 
 .bigAudioCard_box_player {
-    grid-column: 1 / 5;
-    grid-row: 1 / 5;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
 
     display: flex;
-    padding-inline: 3rem;
+    /* padding-inline: 3rem;
     gap: 4rem;
-    z-index: 11111;
+    z-index: 11111; */
     align-items: center;
 }
 
@@ -82,13 +84,30 @@
     background-color: var(--main-bg-color);
     font-size: 2rem;
     cursor: pointer;
+    z-index: 1111;
 
 }
 
 .bigAudioCard_box_img {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    width: 100%;
 }
+
+.bigAudioCard_box_player_img,
+.bigAudioCard_box_img_img {
+    /* grid-column: 1 / -1;
+    grid-row: 1 / -1; */
+    padding: 1rem;
+    border-radius: 2rem;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+
 
 .bigAudioCard_box_details {
     grid-column: 1 / -1;
@@ -116,4 +135,58 @@
     border-radius: .5rem;
     height: 3rem;
     cursor: pointer;
+}
+
+.bigAudioCard_box_details_info_price small {
+    background-color: var(--icons-color);
+    color: var(--main-bg-color);
+    padding: .4rem .5rem;
+    border-radius: .5rem;
+}
+
+.bigAudioCard_box_details_info_price p {
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.bigAudioCard_box_details_stock {
+    text-align: end;
+    display: grid;
+}
+
+.bigAudioCard_box_details_stock small {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 35em) {
+    .bigAudioCard_box_time {
+        padding-inline: 2.5rem;
+
+    }
+
+    .bigAudioCard_box_time_remaining h5 {
+        font-size: 1rem;
+    }
+
+    .bigAudioCard_box_details {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-device-width: 427px) and (max-device-width: 768px) {
+    .bigAudioCard_box_time_remaining h5 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-device-width: 770px) and (max-device-width: 1024px) {
+    .bigAudioCard_box_time {
+        padding: 1rem 2rem;
+    }
+
+    .bigAudioCard_box_time_remaining h5 {
+        font-size: 1rem;
+    }
+
+
 }
