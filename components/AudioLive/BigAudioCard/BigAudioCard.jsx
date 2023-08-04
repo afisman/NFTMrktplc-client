@@ -50,7 +50,7 @@ const BigAudioCard = () => {
                     <Image
                         src={images.nft_image_1}
                         alt='music'
-                        width={200}
+                        // width={200}
 
                         className={Style.bigAudioCard_box_player_img}
 
