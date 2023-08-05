@@ -12,6 +12,7 @@ import NFTCard from "./NFTCard/NFTCard";
 import Collection from "./Collection/Collection";
 import FollowerTab from './FollowerTab/FollowerTab';
 import AudioLive from './AudioLive/AudioLive';
+import LikeProfile from './LikeProfile/LikeProfile';
 
 
 
@@ -20,4 +21,5 @@ import AudioLive from './AudioLive/AudioLive';
 
 
 
-export { Button, Footer, Navbar, HeroSection, Service, NFTSlider, Subscribe, Title, Category, Filter, NFTCard, Collection, FollowerTab, AudioLive }
+
+export { Button, Footer, Navbar, HeroSection, Service, NFTSlider, Subscribe, Title, Category, Filter, NFTCard, Collection, FollowerTab, AudioLive, LikeProfile }

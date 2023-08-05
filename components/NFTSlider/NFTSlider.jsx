@@ -115,7 +115,7 @@ const NFTSlider = () => {
                     <div className={Style.NFTSlider_box_left_bidding}>
                         <div className={Style.NFTSlider_box_left_bidding_box}>
                             <small>Current Bid</small>
-                            <p>{sliderData[idNumber].price} <span>$222</span></p>
+                            <p>{sliderData[idNumber].price} <span>- $222</span></p>
                         </div>
 
                         <p className={Style.NFTSlider_box_left_bidding_box_auction}>

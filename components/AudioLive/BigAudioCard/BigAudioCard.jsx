@@ -5,6 +5,7 @@ import { TbPlayerPause, TbPlayerPlay } from 'react-icons/tb';
 
 import images from '../../../img';
 import Style from './BigAudioCard.module.css';
+import { LikeProfile } from '../../componentsIndex';
 
 const BigAudioCard = () => {
     const [like, setLike] = useState(false);
@@ -81,6 +82,7 @@ const BigAudioCard = () => {
                     </div>
                 </div>
                 <div className={Style.bigAudioCard_box_details_stock}>
+                    <LikeProfile />
                     <small>24 in stock</small>
                 </div>
             </div>
