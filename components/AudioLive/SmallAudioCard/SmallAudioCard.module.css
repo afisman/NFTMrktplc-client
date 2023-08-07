@@ -45,4 +45,6 @@
     font-size: 2rem;
     background-color: var(--main-bg-color);
     border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
 }
