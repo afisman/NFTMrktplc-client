@@ -1,6 +1,10 @@
+.NFTSlider {
+    margin: 3rem;
+}
+
 .NFTSlider_box {
     margin: 0 auto;
-    width:80%;
+    width: 80%;
     padding-block: 8rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -36,7 +40,7 @@
 .NFTSlider_box_left_creator {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;    
+    align-items: center;
 }
 
 .NFTSlider_box_left_creator_profile {
@@ -150,7 +154,7 @@
     align-items: center;
     object-fit: contain;
     width: auto;
-    height:80vh;
+    height: 80vh;
 }
 
 .NFTSlider_box_right_box_like {
@@ -166,7 +170,9 @@
     padding: .5rem 1rem;
     border-radius: 5rem;
 }
-@media screen and (max-width: 65em) {
+
+/* Problem at 1040px */
+@media screen and (max-screen-width: 1600px) {
     .NFTSlider_box {
         width: 90%;
         padding-top: 28rem;
