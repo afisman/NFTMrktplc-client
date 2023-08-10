@@ -14,9 +14,6 @@ const Home = () => {
       />
       <AudioLive />
       <FollowerTab />
-      <Title heading='Explore NFTs video'
-        paragraph='Click on play icon and enjoy NFTs video.'
-      />
       <Slider />
       <Title heading='New Collection'
         paragraph='Discover the most outstanding NFTs.'

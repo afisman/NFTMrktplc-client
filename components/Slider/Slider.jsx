@@ -8,7 +8,7 @@ import SliderCard from './SliderCard/SliderCard';
 
 const Slider = () => {
 
-    const sliderArray = [1, 2, 3, 4, 5, 6, 7];
+    const sliderArray = [1, 2, 3, 4, 5, 6];
 
     const [width, setWidth] = useState(0);
 
