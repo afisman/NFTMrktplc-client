@@ -1,7 +1,11 @@
 import React from 'react';
 
 import Style from '../styles/index.module.css';
-import { HeroSection, Service, NFTSlider, Subscribe, Title, Category, Filter, NFTCard, Collection, FollowerTab, AudioLive, Slider } from '../components/componentsIndex';
+import {
+  HeroSection, Service, NFTSlider, Subscribe, Title,
+  Category, Filter, NFTCard, Collection, FollowerTab,
+  AudioLive, Slider, Brand, VideoCard
+} from '../components/componentsIndex';
 
 const Home = () => {
   return (
@@ -29,6 +33,8 @@ const Home = () => {
       />
       <Category />
       <Subscribe />
+      <Brand />
+      <VideoCard />
     </div>
   )
 }

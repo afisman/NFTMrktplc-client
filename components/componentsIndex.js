@@ -14,6 +14,8 @@ import FollowerTab from './FollowerTab/FollowerTab';
 import AudioLive from './AudioLive/AudioLive';
 import LikeProfile from './LikeProfile/LikeProfile';
 import Slider from './Slider/Slider';
+import Brand from './Brand/Brand';
+import VideoCard from './VideoCard/VideoCard';
 
 
 
@@ -24,4 +26,10 @@ import Slider from './Slider/Slider';
 
 
 
-export { Button, Footer, Navbar, HeroSection, Service, NFTSlider, Subscribe, Title, Category, Filter, NFTCard, Collection, FollowerTab, AudioLive, LikeProfile, Slider }
+
+
+export {
+    Button, Footer, Navbar, HeroSection, Service, NFTSlider,
+    Subscribe, Title, Category, Filter, NFTCard, Collection,
+    FollowerTab, AudioLive, LikeProfile, Slider, Brand, VideoCard
+}

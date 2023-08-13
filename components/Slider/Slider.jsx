@@ -38,11 +38,11 @@ const Slider = () => {
                 <div className={Style.slider_box_button}>
                     <p>Click on play icon and enjoy</p>
                     <div className={Style.slider_box_button_btn}>
-                        <div className={Style.slider_box_button_btn_icon}>
-                            <TiArrowLeftThick onClick={() => handleScroll("left")} />
+                        <div className={Style.slider_box_button_btn_icon} onClick={() => handleScroll("left")}>
+                            <TiArrowLeftThick />
                         </div>
-                        <div className={Style.slider_box_button_btn_icon}>
-                            <TiArrowRightThick onClick={() => handleScroll("right")} />
+                        <div className={Style.slider_box_button_btn_icon} onClick={() => handleScroll("right")}>
+                            <TiArrowRightThick />
                         </div>
                     </div>
                 </div>
