@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Style from './VideoCard.module.css'
 import images from '../../img';
 
+//Need to work on the positioning of left and right
+
 const VideoCard = () => {
     return (
         <div className={Style.video}>
@@ -18,9 +20,10 @@ const VideoCard = () => {
                         <Image
                             src={images.user1}
                             alt='Video image'
-                            width={1920}
-                            height={1080}
+                            // width={1920}
+                            // height={1080}
                             style={{ objectFit: "cover" }}
+                            className={Style.video_box_frame_left_img}
                         />
                     </div>
                     <div className={Style.video_box_frame_right}>
