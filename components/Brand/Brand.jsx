@@ -10,7 +10,7 @@ const Brand = () => {
         <div className={Style.brand}>
             <div className={Style.brand_box}>
                 <div className={Style.brand_box_left}>
-                    <Image src={images.nft_image_2}
+                    <Image src={images.creatorbackground1}
                         alt='brand logo'
                         width={100}
                         height={100}
@@ -27,7 +27,7 @@ const Brand = () => {
                 </div>
                 <div className={Style.brand_box_right}>
                     <Image
-                        src={images.nft_image_1}
+                        src={images.nft_image_3}
                         alt='brand logo'
                         width={800}
                         height={600}

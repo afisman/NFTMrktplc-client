@@ -10,6 +10,7 @@ import { CgMenuLeft, CgMenuRight } from 'react-icons/cg'
 import Style from './Navbar.module.css'
 
 import { Discover, Helpcenter, Notification, Profile, Sidebar } from './index'
+import images from '../../img'
 import { Button } from '../componentsIndex'
 
 const Navbar = () => {
@@ -91,12 +92,11 @@ const Navbar = () => {
         <div className={Style.navbar_container}>
             <div className={Style.navbar_container_left}>
                 <div className={Style.logo}>
-                    {/* Images should go here
-<Image src= {images.logo}
- alt='NFT marketplace" 
- width={100} 
- height={100}/>
-*/}
+                    <Image src={images.logo}
+                        alt='NFT marketplace'
+                        width={100}
+                        height={100} />
+
                 </div>
                 <div className={Style.navbar_container_left_box_input}>
                     <div className={Style.navbar_container_left_box_input_box}>

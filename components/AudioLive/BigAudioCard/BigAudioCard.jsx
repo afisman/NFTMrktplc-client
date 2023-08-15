@@ -88,7 +88,7 @@ const BigAudioCard = () => {
             </div>
             <div className={Style.bigAudioCard_box_img}>
                 <Image
-                    src={images.user1}
+                    src={images.user2}
                     alt='background'
                     // width={500}
                     // height={500}

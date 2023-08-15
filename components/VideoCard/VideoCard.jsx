@@ -18,7 +18,7 @@ const VideoCard = () => {
                 <div className={Style.video_box_frame}>
                     <div className={Style.video_box_frame_left}>
                         <Image
-                            src={images.user1}
+                            src={images.creatorbackground3}
                             alt='Video image'
                             // width={1920}
                             // height={1080}

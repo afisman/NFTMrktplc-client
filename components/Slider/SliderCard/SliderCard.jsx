@@ -11,23 +11,23 @@ const SliderCard = ({ el, i }) => {
             <motion.div className={Style.sliderCard_box}>
                 <motion.div className={Style.sliderCard_box_img}>
                     <Image
-                        src={images.nft_image_2}
+                        src={images.nft_image_3}
                         alt='Slider profile'
-                        // width={500}
-                        // height={300}
-                        // style={{ objectFit: "cover" }}
+                        width={500}
+                        height={300}
+                        style={{ objectFit: "cover" }}
                         className={Style.sliderCard_box_img_img}
                     />
                 </motion.div>
-                <div className={Style.sliderCard_box_title}>
+                <motion.div className={Style.sliderCard_box_title}>
                     <p>NFT Video #1245</p>
 
                     <div className={Style.sliderCard_box_title_like}>
                         {/* <LikeProfile /> */}
                         <small>1 of 100</small>
                     </div>
-                </div>
-                <div className={Style.sliderCard_box_price}>
+                </motion.div>
+                <motion.div className={Style.sliderCard_box_price}>
                     <div className={Style.sliderCard_box_price_box}>
                         <small>Current Bid</small>
                         <p>1.000 ETH</p>
@@ -36,7 +36,7 @@ const SliderCard = ({ el, i }) => {
                         <small>Remaining time</small>
                         <p>4:20:22</p>
                     </div>
-                </div>
+                </motion.div>
             </motion.div>
         </motion.div>
     )

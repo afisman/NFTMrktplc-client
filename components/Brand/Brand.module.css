@@ -32,6 +32,14 @@
     margin-top: 3rem;
 }
 
+.brand_box_left_img {
+    border-radius: 1rem;
+}
+
+.brand_box_right_img {
+    border-radius: 2rem;
+}
+
 @media screen and (max-width:35em) {
     .brand_box {
         grid-template-columns: 1fr;

@@ -1,9 +1,9 @@
-.notification { 
+.notification {
     position: absolute;
-    padding: 2rem 1rem; 
+    padding: 2rem 1rem;
     box-shadow: var(--box-shadow);
     font-size: 1rem;
-    width: 25rem;  
+    width: 25rem;
     border-radius: 1rem;
     left: -20rem;
     top: 3.5rem;
@@ -11,7 +11,7 @@
     background-color: var(--main-bg-color);
 }
 
-.notification > p {
+.notification>p {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 2rem;
@@ -36,11 +36,12 @@
 }
 
 .notification_box_info {
-    line-height:0;
+    line-height: 0;
     margin-top: -.8rem;
 }
+
 .notification_box_info h4 {
-   font-weight: 600;
+    font-weight: 600;
 
 }
 
@@ -58,13 +59,15 @@
 }
 
 @media screen and (max-width: 35em) {
-    .notification{
-        width: 20rem;
-        left: -15rem;
+    .notification {
+        width: 21rem;
+        left: -11rem;
     }
+
     .notification_box {
         padding: .3rem;
     }
+
     .notification_box p {
         font-size: 12px;
     }

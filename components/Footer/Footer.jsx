@@ -12,7 +12,7 @@ import {
 } from 'react-icons/ti'
 import { RiSendPlaneFill } from 'react-icons/ri'
 
-// import images from '../../img'
+import images from '../../img'
 
 import Style from './Footer.module.css'
 import { Discover, Helpcenter } from '../Navbar/index'
@@ -22,12 +22,12 @@ const Footer = () => {
         <div className={Style.footer}>
             <div className={Style.footer_box}>
                 <div className={Style.footer_box_social}>
-                    {/* <Image
+                    <Image
                         src={images.logo}
                         alt='footer logo'
                         height={100}
                         width={100}
-                    /> */}
+                    />
                     <p>
                         NFT market place, more description.
                     </p>

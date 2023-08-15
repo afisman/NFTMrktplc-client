@@ -27,20 +27,22 @@ const FollowerTabCard = ({ i, el }) => {
             <div className={Style.followerTabCard_box}>
                 <div className={Style.followerTabCard_box_img}>
                     <Image
-                        src={images.user1}
+                        src={el.background}
                         className={Style.followerTabCard_box_img_img}
                         alt='profile background'
-                        width={500}
-                        height={300}
+                        // width={500}
+                        // height={300}
+                        style={{ objectFit: "cover" }}
+
                     />
                 </div>
                 <div className={Style.followerTabCard_box_profile}>
                     <Image
-                        src={images.user1}
+                        src={el.user}
                         className={Style.followerTabCard_box_profile_img}
                         alt='Profile picture'
-                        width={80}
-                        height={80}
+                        width={90}
+                        height={90}
                     />
                 </div>
                 <div className={Style.followerTabCard_box_info}>

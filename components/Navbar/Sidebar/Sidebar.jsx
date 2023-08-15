@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { GrClose } from 'react-icons/gr'
+import Link from 'next/link';
+import Image from 'next/image';
+import { GrClose } from 'react-icons/gr';
 import {
     TiSocialFacebook,
     TiSocialLinkedin,
@@ -10,12 +10,12 @@ import {
     TiSocialInstagram,
     TiArrowSortedDown,
     TiArrowSortedUp
-} from 'react-icons/ti'
+} from 'react-icons/ti';
 
 
-import Style from './Sidebar.module.css'
-//import images
-import { Button } from '../../componentsIndex'
+import Style from './Sidebar.module.css';
+import images from '../../../img';
+import { Button } from '../../componentsIndex';
 
 const Sidebar = ({ setOpenSideMenu }) => {
 
@@ -105,12 +105,12 @@ const Sidebar = ({ setOpenSideMenu }) => {
             />
 
             <div className={Style.sideBar_box}>
-                {/* <Image
+                <Image
                     src={images.logo}
                     alt='logo'
                     width={150}
                     height={150}
-                /> */}
+                />
                 <p>
                     Discover the most outstanding articles on all topics of NFT & write your own stories and share them
                 </p>

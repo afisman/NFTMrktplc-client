@@ -13,7 +13,7 @@ const Category = () => {
                 {categoriesArray.map((el, i) => (
                     <div className={Style.category_box} key={i + 1}>
                         <Image
-                            src={images.user1}
+                            src={images.user3}
                             className={Style.category_box_img}
                             alt='Category image'
                             width={350}

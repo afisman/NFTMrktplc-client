@@ -1,9 +1,8 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
-import Style from './Notification.module.css'
-// import image when available
-
+import Style from './Notification.module.css';
+import images from '../../../img';
 
 const Notification = () => {
     return (
@@ -11,12 +10,12 @@ const Notification = () => {
             <p>Notification</p>
             <div className={Style.notification_box}>
                 <div className={Style.notification_box_img}>
-                    {/* <Image
+                    <Image
                         src={images.user1}
                         alt='profile image'
                         width={50}
                         height={50}
-                    /> */}
+                    />
                 </div>
                 <div className={Style.notification_box_info}>
                     <h4>Alef Tau</h4>
