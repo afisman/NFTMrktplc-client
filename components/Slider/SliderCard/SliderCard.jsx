@@ -11,7 +11,7 @@ const SliderCard = ({ el, i }) => {
             <motion.div className={Style.sliderCard_box}>
                 <motion.div className={Style.sliderCard_box_img}>
                     <Image
-                        src={images.nft_image_3}
+                        src={el.background}
                         alt='Slider profile'
                         width={500}
                         height={300}
