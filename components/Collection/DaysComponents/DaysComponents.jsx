@@ -5,16 +5,16 @@ import { MdVerified } from 'react-icons/md';
 import Style from './DaysComponents.module.css';
 import images from '../../../img';
 
-const DaysComponents = () => {
+const DaysComponents = ({ el, i }) => {
     return (
         <div className={Style.daysComponent}>
             <div className={Style.daysComponent_box}>
                 <div className={Style.daysComponent_box_img}>
-                    <Image src={images.user6}
+                    <Image src={el.background}
                         className={Style.daysComponent_box_img_img}
                         alt='Profile background'
-                        // width={500}
-                        // height={300}
+                        width={500}
+                        height={300}
                         style={{ objectFit: "cover" }} />
                 </div>
                 <div className={Style.daysComponent_box_profile}>
@@ -46,7 +46,7 @@ const DaysComponents = () => {
                     <div className={Style.daysComponent_box_title_info}>
                         <div className={Style.daysComponent_box_title_info_profile}>
                             <Image
-                                src={images.user4}
+                                src={el.user}
                                 alt='Profile image'
                                 width={30}
                                 height={30}
