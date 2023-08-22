@@ -13,30 +13,30 @@ const DaysComponents = ({ el, i }) => {
                     <Image src={el.background}
                         className={Style.daysComponent_box_img_img}
                         alt='Profile background'
-                        width={500}
-                        height={300}
+                        // width={500}
+                        // height={300}
                         style={{ objectFit: "cover" }} />
                 </div>
                 <div className={Style.daysComponent_box_profile}>
                     <Image
                         src={images.nft_image_1}
                         alt='profile'
-                        width={200}
-                        height={150}
+                        // width={200}
+                        // height={150}
                         className={Style.daysComponent_box_img_1}
                     />
                     <Image
                         src={images.nft_image_2}
                         alt='profile'
-                        width={200}
-                        height={150}
+                        // width={200}
+                        // height={150}
                         className={Style.daysComponent_box_img_2}
                     />
                     <Image
                         src={images.nft_image_3}
                         alt='profile'
-                        width={200}
-                        height={150}
+                        // width={200}
+                        // height={150}
                         className={Style.daysComponent_box_img_3}
                     />
 

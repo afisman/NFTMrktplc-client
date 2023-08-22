@@ -19,6 +19,8 @@
 
 .collectionProfile_box_left_img {
     border-radius: 1rem;
+    width: 100%;
+    height: auto;
 }
 
 .collectionProfile_box_left_social {
@@ -72,6 +74,25 @@
 
 .collectionProfile_box_middle_box_item {
     background-color: var(--main-bg-color);
+    box-shadow: var(--box-shadow-2);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    line-height: 0;
+    text-align: center;
+}
+
+.collectionProfile_box_middle_box_item p {
+    font-size: 2rem;
+    line-height: 0;
+}
+
+.collectionProfile_box_middle_box_item small {
+    display: block;
+    line-height: 3;
+}
+
+.collectionProfile_box_middle_box_item span {
+    color: var(--icons-color);
 }
 
 @media screen and (max-width:35em) {
@@ -82,8 +103,75 @@
         gap: 1rem;
     }
 
+    .collectionProfile_box_middle {
+        padding: 1rem;
+    }
+
+    .collectionProfile_box_middle_box {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .collectionProfile_box_middle h1 {
+        font-size: 1.8rem;
+        line-height: 1;
+    }
+
+    .collectionProfile_box_middle p {
+        line-height: 1.3rem;
+        width: 100%;
+        margin-top: -.5rem;
+    }
+
+    .collectionProfile_box_middle_box_item {
+        line-height: 0;
+        padding: 2rem 1rem;
+    }
+
+    .collectionProfile_box_middle_box_item p {
+        font-size: 1rem;
+    }
+
     .collectionProfile_box_left_img {
         width: 100%;
         height: auto;
+    }
+}
+
+@media screen and (min-device-width: 560px) and (max-device-width: 1024px) {
+    .collectionProfile_box {
+        width: 90%;
+        grid-template-columns: 1fr;
+        padding: 1rem .5rem;
+        gap: 1rem;
+    }
+
+    .collectionProfile_box_middle {
+        padding: 1rem;
+    }
+
+    .collectionProfile_box_middle_box {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .collectionProfile_box_middle h1 {
+        font-size: 1.8rem;
+        line-height: 1;
+    }
+
+    .collectionProfile_box_middle p {
+        line-height: 1.3rem;
+        width: 100%;
+        margin-top: -.5rem;
+    }
+
+    .collectionProfile_box_middle_box_item {
+        line-height: 0;
+        padding: 2rem 1rem;
+    }
+
+    .collectionProfile_box_middle_box_item p {
+        font-size: 1rem;
     }
 }

@@ -20,8 +20,8 @@ const collectionProfile = () => {
                     <Image
                         src={images.nft_image_1}
                         alt='nft image'
-                        width={800}
-                        height={800}
+                        // width={800}     //Try different approach
+                        // height={800}
                         className={Style.collectionProfile_box_left_img}
                     />
                     <div className={Style.collectionProfile_box_left_social}>
@@ -54,8 +54,10 @@ const collectionProfile = () => {
                                 className={Style.collectionProfile_box_middle_box_item}
                                 key={i + 1}
                             >
-                                <small>${i + 1}3294</small>
-                                <span>+{i + 2}.11%</span>
+                                <small>
+                                    <p>${i + 1}3294</p>
+                                    <span>+{i + 2}.11%</span>
+                                </small>
                             </div>
                         ))}
                     </div>
