@@ -6,7 +6,6 @@ import { MdTimer, MdVerified } from 'react-icons/md';
 
 import Style from './NFTCardTwo.module.css';
 import { LikeProfile } from '../../components/componentsIndex';
-import images from '../../img';
 
 
 const NFTCardTwo = ({ NFTData }) => {
@@ -44,9 +43,7 @@ const NFTCardTwo = ({ NFTData }) => {
                         <Image
                             src={el}
                             alt='NFT'
-                        // width={500}
-                        // height={500}
-                        // style={{ objectFit: cover }}
+                            className={Style.nftCardTwo_box_img_img}
                         />
                     </div>
 
@@ -60,7 +57,7 @@ const NFTCardTwo = ({ NFTData }) => {
                     <div className={Style.nftCardTwo_box_price}>
                         <div className={Style.nftCardTwo_box_price_box}>
                             <small>Current Bid</small>
-                            <p>1{i + 5}</p>
+                            <p>1{i + 5}.000ETH</p>
                         </div>
                         <p className={Style.nftCardTwo_box_price_stock}>
                             <MdTimer /> <span>{i + 1} hours left</span>
