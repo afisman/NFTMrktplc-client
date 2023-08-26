@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Style from '../styles/author.module.css';
 import { Banner, NFTCardTwo } from '../collectionPage/collectionIndex';
 import images from '../img'
-// import {AuthorProfileCard, AuthorTaps, TabCard} from './'
+import { AuthorProfileCard, AuthorTaps, TabCard } from '../authorPage/authorIndex'
 import { Brand, Title } from '../components/componentsIndex';
 
 const author = () => {
@@ -28,7 +28,9 @@ const author = () => {
     return (
         <div className={Style.banner}>
             <Banner bannerImage={images.creatorbackground5}
-            />        </div>
+            />
+            <AuthorProfileCard />
+        </div>
     )
 }
 
