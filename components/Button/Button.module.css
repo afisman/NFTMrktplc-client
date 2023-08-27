@@ -1,8 +1,6 @@
-.box {
+.box {}
 
-}
-
-.button{
+.button {
     background-color: var(--icons-color);
     padding: 1rem 2rem;
     border: 1px solid var(--icons-color);
@@ -15,7 +13,7 @@
 }
 
 .button:hover {
-    backgorund-color: var(--main-bg-color);
+    background-color: var(--main-bg-color);
     border: 1px solid var(--icons-color);
     color: var(--icons-color);
 }

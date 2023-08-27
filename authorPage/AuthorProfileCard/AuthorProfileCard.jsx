@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import Image from 'next/image';
 import { MdCloudUpload, MdOutlineReportProblem, MdVerified } from 'react-icons/md';
@@ -15,6 +15,31 @@ const AuthorProfileCard = () => {
 
     const [share, setShare] = useState(false);
     const [report, setReport] = useState(false);
+
+    const copyAddress = () => {
+        const copyText = document.getElementById("addressInput");
+
+        copyText.select();
+        navigator.clipboard.writeText(copyText.value);
+    };
+
+    const openShare = () => {
+        if (!share) {
+            setShare(true);
+            setReport(false);
+        } else {
+            setShare(false);
+        }
+    };
+
+    const openReport = () => {
+        if (!report) {
+            setReport(true);
+            setShare(false);
+        } else {
+            setReport(false);
+        }
+    };
 
     return (
         <div className={Style.authorCard}>
@@ -37,7 +62,7 @@ const AuthorProfileCard = () => {
                         <input
                             type="text"
                             value="00x829BD824B03D092293333..A830"
-                            id='myInput'
+                            id='addressInput'
                         />
                         <FiCopy
                             onClick={() => copyAddress()}
@@ -69,7 +94,7 @@ const AuthorProfileCard = () => {
                 <div className={Style.authorCard_box_share}>
                     <Button btnName="Follow" handleClick={() => { }} />
                     <MdCloudUpload
-                        onClick={() => MdOutlineStopScreenShare()}
+                        onClick={() => openShare()}
                         className={Style.authorCard_box_share_icon}
                     />
                     {share && (
@@ -111,6 +136,23 @@ const AuthorProfileCard = () => {
                             </p>
                         </div>
                     )}
+
+                    <BsThreeDots
+                        onClick={() => openReport()}
+                        className={Style.authorCard_box_share_icon}
+                    />
+
+                    {
+                        report && (
+                            <p className={Style.authorCard_box_share_report}>
+                                <span>
+                                    <MdOutlineReportProblem />
+                                </span>{" "}
+                                {""}
+                                Report abuse
+                            </p>
+                        )
+                    }
                 </div>
             </div>
         </div>
