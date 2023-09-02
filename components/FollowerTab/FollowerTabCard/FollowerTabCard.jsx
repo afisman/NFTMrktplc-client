@@ -4,7 +4,6 @@ import { MdVerified } from 'react-icons/md';
 import { TiTick } from 'react-icons/ti';
 
 import Style from './FollowerTabCard.module.css';
-import images from '../../../img'
 
 const FollowerTabCard = ({ i, el }) => {
     const [following, setFollowing] = useState(false);
@@ -16,6 +15,7 @@ const FollowerTabCard = ({ i, el }) => {
             setFollowing(false);
         }
     }
+
 
     return (
         <div className={Style.followerTabCard}>
