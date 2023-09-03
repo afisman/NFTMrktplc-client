@@ -4,4 +4,4 @@ import NFTCardTwo from "./NFTCardTwo/NFTCardTwo";
 
 export {
     CollectionProfile, Banner, NFTCardTwo
-}
+};

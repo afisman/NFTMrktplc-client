@@ -124,7 +124,7 @@
 @media screen and (min-device-width: 427px) and (max-device-width: 769px) {
     .followerTab_box {
         width: 90%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .followerTab_title {
@@ -153,6 +153,6 @@
 
     .followerTab_box {
         width: 90%;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }

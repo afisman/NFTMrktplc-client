@@ -38,7 +38,7 @@
 .followerTabCard_box_img_img {
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 30vh;
     border-radius: 2rem;
 }
 
@@ -52,21 +52,23 @@
 .followerTabCard_box_profile_img {
     align-items: center;
     border-radius: 50%;
-    padding: 1rem;
+    padding: .05rem;
     z-index: 22222;
     position: relative;
+    width: 5.625em;
+    height: 5.625em;
 }
 
 .followerTabCard_box_profile::before {
     text-align: center;
     position: absolute;
     content: "";
-    width: 5rem;
-    height: 5rem;
+    width: 7.5em;
+    height: 7.5em;
     background-color: var(--main-bg-color);
     border-radius: 50%;
-    top: -10%;
-    left: 38%;
+    top: -15%;
+    left: 35.1%;
 }
 
 .followerTabCard_box_info {
@@ -99,7 +101,7 @@
 
 @media screen and (max-device-width: 375px) {
     .followerTabCard_box_profile::before {
-        left: 38%;
+        left: 34%;
     }
 
     .followerTabCard_box_info {
@@ -107,19 +109,27 @@
     }
 
     .followerTabCard_box_img_img {
-        height: 200;
+        height: 50vh;
     }
 }
 
 @media screen and (min-device-width: 377px) and (max-device-width: 425px) {
     .followerTabCard_box_profile::before {
-        left: 39.5%;
+        left: 35.5%;
+    }
+
+    .followerTabCard_box_img_img {
+        height: 50vh;
     }
 }
 
 @media screen and (min-device-width: 427px) and (max-device-width: 768px) {
     .followerTabCard_box_profile::before {
-        left: 41%;
+        left: 36.3%;
+    }
+
+    .followerTabCard_box_img_img {
+        height: 50vh;
     }
 }
 

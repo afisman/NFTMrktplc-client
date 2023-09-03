@@ -20,6 +20,34 @@ const author = () => {
         images.user8,
     ];
 
+    const followingArray = [
+        {
+            background: images.creatorbackground6,
+            user: images.user6
+        },
+        {
+            background: images.creatorbackground2,
+            user: images.user2
+        },
+        {
+            background: images.creatorbackground3,
+            user: images.user3
+        },
+        {
+            background: images.creatorbackground9,
+            user: images.user9
+        },
+        {
+            background: images.creatorbackground8,
+            user: images.user8
+        },
+        {
+            background: images.creatorbackground7,
+            user: images.user7
+        },
+
+    ];
+
     const [collectibles, setCollectibles] = useState(true);
     const [created, setCreated] = useState(false);
     const [like, setLike] = useState(false);
@@ -27,7 +55,7 @@ const author = () => {
     const [following, setFollowing] = useState(false);
 
     return (
-        <div className={Style.banner}>
+        <div className={Style.author}>
             <Banner bannerImage={images.creatorbackground5}
             />
             <AuthorProfileCard />
@@ -50,6 +78,12 @@ const author = () => {
                 paragraph="Click on icon and enjoy NFT music or audio"
             />
 
+            <div className={Style.author_box}>
+                {followingArray.map((el, i) => (
+                    <FollowerTabCard key={i + 1} i={i} el={el} />
+
+                ))}
+            </div>
             <Brand />
         </div>
     )

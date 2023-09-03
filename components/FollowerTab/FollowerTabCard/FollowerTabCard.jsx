@@ -41,8 +41,8 @@ const FollowerTabCard = ({ i, el }) => {
                         src={el.user}
                         className={Style.followerTabCard_box_profile_img}
                         alt='Profile picture'
-                        width={90}
-                        height={90}
+                    // width={90}
+                    // height={90}
                     />
                 </div>
                 <div className={Style.followerTabCard_box_info}>
