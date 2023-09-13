@@ -231,29 +231,29 @@ const NFTDescription = () => {
                                 />
                             </div>
                             <div className={Style.NFTDescription_box_profile_bidding_tabs}>
-                                <button onClick={(e) => openTabs()}>Bid History</button>
-                                <button onClick={(e) => openTabs()}>Provenance</button>
+                                <button onClick={(e) => openTabs(e)}>Bid History</button>
+                                <button onClick={(e) => openTabs(e)}>Provenance</button>
                                 <button onClick={() => openOwner()}>Owner</button>
                             </div>
 
                             {
                                 history && (
                                     <div className={Style.NFTDescription_box_profile_bidding_card}>
-                                        <NFTTabs dataTab={historyArray} />
+                                        <NFTTabs dataTab={historyArray} icon={<MdVerified />} />
                                     </div>
                                 )
                             }
                             {
                                 provenance && (
                                     <div className={Style.NFTDescription_box_profile_bidding_card}>
-                                        <NFTTabs dataTab={provenanceArray} />
+                                        <NFTTabs dataTab={provenanceArray} icon={<MdVerified />} />
                                     </div>
                                 )
                             }
                             {
                                 owner && (
                                     <div className={Style.NFTDescription_box_profile_bidding_card}>
-                                        <NFTTabs dataTab={ownerArray} />
+                                        <NFTTabs dataTab={ownerArray} icon={<MdVerified />} />
                                     </div>
                                 )
                             }
