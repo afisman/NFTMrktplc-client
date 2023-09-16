@@ -26,7 +26,7 @@ import { NFTTabs } from '../NFTDetailsIndex';
 
 
 const NFTDescription = () => {
-    const [social, setSocial] = useState(true);
+    const [social, setSocial] = useState(false);
     const [NFTMenu, setNFTMenu] = useState(false);
     const [provenance, setProvenance] = useState(true);
     const [history, setHistory] = useState(false);
@@ -110,7 +110,7 @@ const NFTDescription = () => {
                         />
 
                         {social && (
-                            <div className={Style.NFTDescription_box_share_box_socialn}>
+                            <div className={Style.NFTDescription_box_share_box_social}>
                                 <a href="#">
                                     <TiSocialFacebook /> FaceBook
                                 </a>
@@ -182,82 +182,83 @@ const NFTDescription = () => {
                         </div>
 
 
-                        <div className={Style.NFTDescription_box_profile_bidding}>
 
-                            <div className={Style.NFTDescription_box_profile_bidding_timer}>
-                                <MdVerified /> <span>Auction ending in:</span>
+                    </div>
+                    <div className={Style.NFTDescription_box_profile_bidding}>
 
-                                <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
-                                    <p>2 </p>
-                                    <span>days</span>
-                                </div>
-                                <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
-                                    <p>22 </p>
-                                    <span>hours</span>
-                                </div>
-                                <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
-                                    <p>33 </p>
-                                    <span>minutes</span>
-                                </div>
-                                <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
-                                    <p>12 </p>
-                                    <span>seconds</span>
-                                </div>
+                        <div className={Style.NFTDescription_box_profile_bidding_timer}>
+                            <MdVerified /> <span>Auction ending in:</span>
+
+                            <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
+                                <p>2 </p>
+                                <span>days</span>
                             </div>
-
-                            <div className={Style.NFTDescription_box_profile_bidding_price}>
-                                <div className={Style.NFTDescription_box_profile_bidding_price_bid}>
-                                    <small>Current Bid</small>
-                                    <p>
-                                        1.000 ETH <span>( ≈ $1620.13)</span>
-                                    </p>
-                                </div>
-
-                                <span>[46 in stock]</span>
+                            <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
+                                <p>22 </p>
+                                <span>hours</span>
                             </div>
-
-                            <div className={Style.NFTDescription_box_profile_bidding_button}>
-                                <Button
-                                    icon={<FaWallet />}
-                                    btnName="Place bid"
-                                    handleClick={() => { }}
-                                    classStyle={Style.button}
-                                />
-                                <Button
-                                    icon={<FaPercentage />}
-                                    btnName="Make offer"
-                                    handleClick={() => { }}
-                                    classStyle={Style.button}
-                                />
+                            <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
+                                <p>33 </p>
+                                <span>minutes</span>
                             </div>
-                            <div className={Style.NFTDescription_box_profile_bidding_tabs}>
-                                <button onClick={(e) => openTabs(e)}>Bid History</button>
-                                <button onClick={(e) => openTabs(e)}>Provenance</button>
-                                <button onClick={() => openOwner()}>Owner</button>
+                            <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
+                                <p>12 </p>
+                                <span>seconds</span>
                             </div>
-
-                            {
-                                history && (
-                                    <div className={Style.NFTDescription_box_profile_bidding_card}>
-                                        <NFTTabs dataTab={historyArray} icon={<MdVerified />} />
-                                    </div>
-                                )
-                            }
-                            {
-                                provenance && (
-                                    <div className={Style.NFTDescription_box_profile_bidding_card}>
-                                        <NFTTabs dataTab={provenanceArray} icon={<MdVerified />} />
-                                    </div>
-                                )
-                            }
-                            {
-                                owner && (
-                                    <div className={Style.NFTDescription_box_profile_bidding_card}>
-                                        <NFTTabs dataTab={ownerArray} icon={<MdVerified />} />
-                                    </div>
-                                )
-                            }
                         </div>
+
+                        <div className={Style.NFTDescription_box_profile_bidding_price}>
+                            <div className={Style.NFTDescription_box_profile_bidding_price_bid}>
+                                <small>Current Bid</small>
+                                <p>
+                                    1.000 ETH <span>( ≈ $1620.13)</span>
+                                </p>
+                            </div>
+
+                            <span>[46 in stock]</span>
+                        </div>
+
+                        <div className={Style.NFTDescription_box_profile_bidding_button}>
+                            <Button
+                                icon={<FaWallet />}
+                                btnName="Place bid"
+                                handleClick={() => { }}
+                                classStyle={Style.button}
+                            />
+                            <Button
+                                icon={<FaPercentage />}
+                                btnName="Make offer"
+                                handleClick={() => { }}
+                                classStyle={Style.button}
+                            />
+                        </div>
+                        <div className={Style.NFTDescription_box_profile_bidding_tabs}>
+                            <button onClick={(e) => openTabs(e)}>Bid History</button>
+                            <button onClick={(e) => openTabs(e)}>Provenance</button>
+                            <button onClick={() => openOwner()}>Owner</button>
+                        </div>
+
+                        {
+                            history && (
+                                <div className={Style.NFTDescription_box_profile_bidding_card}>
+                                    <NFTTabs dataTab={historyArray} icon={<MdVerified />} />
+                                </div>
+                            )
+                        }
+                        {
+                            provenance && (
+                                <div className={Style.NFTDescription_box_profile_bidding_card}>
+                                    <NFTTabs dataTab={provenanceArray} icon={<MdVerified />} />
+                                </div>
+                            )
+                        }
+                        {
+                            owner && (
+                                <div className={Style.NFTDescription_box_profile_bidding_card}>
+                                    <NFTTabs dataTab={ownerArray} icon={<MdVerified />} />
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
 
