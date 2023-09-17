@@ -17,9 +17,9 @@ const NFTTabs = ({ dataTab, icon }) => {
                         />
                         <div className={Style.NFTTabs_box_info}>
                             <span>
-                                Highest offer is $$770 by <small>Tau Lef</small>
+                                Highest offer is $$770 by <small>Tau Lef</small>{" "}{icon}
                             </span>
-                            {icon}
+
                             <small>Sept 13 - 14:20 CET</small>
                         </div>
                     </div>

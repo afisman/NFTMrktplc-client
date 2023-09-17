@@ -62,6 +62,7 @@ const NFTDescription = () => {
     const openSocial = () => {
         if (!social) {
             setSocial(true);
+            setNFTMenu(false);
         } else {
             setSocial(false);
         }
@@ -70,6 +71,7 @@ const NFTDescription = () => {
     const openNFTMenu = () => {
         if (!NFTMenu) {
             setNFTMenu(true);
+            setSocial(false);
         } else {
             setNFTMenu(false);
         }
@@ -95,6 +97,7 @@ const NFTDescription = () => {
             setProvenance(false);
         } else {
             setOwner(false);
+            setHistory(true)
         }
     }
 
@@ -135,7 +138,7 @@ const NFTDescription = () => {
                         />
 
                         {NFTMenu && (
-                            <div className={Style.NFTDescription_box_share_box_social}>
+                            <div className={Style.NFTDescription_box_share_box_NFT}>
                                 <a href="#">
                                     <BiDollar /> Change price
                                 </a>
@@ -185,27 +188,30 @@ const NFTDescription = () => {
 
                     </div>
                     <div className={Style.NFTDescription_box_profile_bidding}>
+                        <div className={Style.NFTDescription_box_profile_bidding_box}>
+                            <MdTimer /> <span>Auction ending in:</span>
+                            <div className={Style.NFTDescription_box_profile_bidding_box_timer}>
 
-                        <div className={Style.NFTDescription_box_profile_bidding_timer}>
-                            <MdVerified /> <span>Auction ending in:</span>
-
-                            <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
-                                <p>2 </p>
-                                <span>days</span>
-                            </div>
-                            <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
-                                <p>22 </p>
-                                <span>hours</span>
-                            </div>
-                            <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
-                                <p>33 </p>
-                                <span>minutes</span>
-                            </div>
-                            <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
-                                <p>12 </p>
-                                <span>seconds</span>
+                                <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
+                                    <p>2 </p>
+                                    <span>days</span>
+                                </div>
+                                <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
+                                    <p>22 </p>
+                                    <span>hours</span>
+                                </div>
+                                <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
+                                    <p>33 </p>
+                                    <span>minutes</span>
+                                </div>
+                                <div className={Style.NFTDescription_box_profile_bidding_box_timer_item}>
+                                    <p>12 </p>
+                                    <span>seconds</span>
+                                </div>
                             </div>
                         </div>
+
+
 
                         <div className={Style.NFTDescription_box_profile_bidding_price}>
                             <div className={Style.NFTDescription_box_profile_bidding_price_bid}>

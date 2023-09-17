@@ -26,8 +26,8 @@ const Discover = () => {
             link: "NFTDetails"
         },
         {
-            name: "Account Setting",
-            link: "account-setting"
+            name: "Account Settings",
+            link: "account"
         },
         {
             name: "Connect Wallet",
