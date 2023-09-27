@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MdOutlineAttachFile, MdOutlineHttp } from 'react-icons/md';
 import { FaPercent } from 'react-icons/fa';
 import { AiTwotonePropertySafety } from 'react-icons/ai';
-import { TiTick } from 'react-icons/ti';
+import { TiTick, TiSocialFacebook, TiSocialInstagram, TiSocialTwitter } from 'react-icons/ti';
 import Image from 'next/image';
 
 import Style from './UloadNFT.module.css';
@@ -65,25 +65,27 @@ const UloadNFT = () => {
                 image={images.upload}
             />
             <div className={Style.UploadNFT_box}>
-                <div className={Style.UploadNFT_box_input}>
-                    <label htmlFor="nft">Item Name</label>
+                <div className={formStyle.form_box_input}>
+                    <legend htmlFor="nft">Item Name</legend>
                     <input
                         type="text"
                         placeholder='Alef Tau'
-                        className={Style.UploadNFT_box_input_itemName}
+                        name='name'
+                        className={formStyle.form_box_input_userName}
                         onChange={(e) => setItemName(e.target.value)}
                     />
                 </div>
 
                 <div className={Style.UploadNFT_box_input}>
-                    <label htmlFor="website">Website</label>
-                    <div className={Style.UploadNFT_box_input}>
-                        <div className={Style.UploadNFT_box_input_box}>
-                            <div className={Style.UploadNFT_box_input_box_icon}>
+                    <legend htmlFor="website">Website</legend>
+                    <div className={formStyle.form_box_input}>
+                        <div className={formStyle.form_box_input_box}>
+                            <div className={formStyle.form_box_input_box_icon}>
                                 <MdOutlineHttp />
                             </div>
                             <input
                                 type="text"
+                                name='website'
                                 placeholder='Website'
                                 onChange={(e) => setItemName(e.target.value)}
 
@@ -96,11 +98,72 @@ const UloadNFT = () => {
                     </p>
                 </div>
 
-                <div className={Style.UploadNFT_box_input}>
-                    <label htmlFor="description">Description</label>
-                    <textarea name="" id="" cols="30" rows="6"
+                <div className={Style.form_box_input}>
+                    <legend htmlFor="description">Description</legend>
+                    <textarea name="description" id="" cols="30" rows="6"
                         placeholder='Write something about yourself in a few words'
                     ></textarea>
+                    <p>The description will be included on the item's detail page underneath its image. Markdown syntax is supported</p>
+                </div>
+                <div className={formStyle.form_box_input}>
+                    <legend htmlFor="name">
+                        Choose collection
+                    </legend>
+                    <p className={Style.UploadNFT_box_input_para}>Choose an existing collection or create a new one</p>
+                    <div className={Style.UploadNFT_box_slider_div}>
+                        {categoryArray.map((el, i) => (
+                            <div className={`${Style.UploadNFT_box_slider} 
+                            ${active == i + 1 ? Style.active : ""}`}
+
+                                key={i + 1}
+                                onClick={() => {
+                                    setActive(i + 1)
+                                    setCategory(el.category)
+                                }}
+                            >
+                                <div className={Style.UploadNFT_box_slider_box}>
+                                    <div className={Style.UploadNFT_box_slider_box_img}>
+                                        <Image
+                                            src={el.image}
+                                            alt='Background image'
+                                            className={Style.UploadNFT_box_slider_box_img_img}
+                                        />
+                                    </div>
+                                    <div className={Style.UploadNFT_box_slider_box_icon}>
+                                        <TiTick />
+                                    </div>
+                                </div>
+                                <p>Crypto Legend-Professor</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className={formStyle.form_box_input_social}>
+                    <div className={formStyle.form_box_input}>
+                        <legend htmlFor="facebook">Facebook</legend>
+                        <div className={formStyle.form_box_input_box}>
+                            <div className={formStyle.form_box_input_box_icon}>
+                                <TiSocialFacebook />
+                            </div>
+                            <input type="text" name='facebook' placeholder='http://alfn.netlify.app' />
+                        </div>
+                    </div>
+                    <div className={formStyle.form_box_input}>
+                        <legend htmlFor="twitter">Twitter</legend>
+                        <div className={formStyle.form_box_input_box}>
+                            <TiSocialTwitter />
+                            <input type="text" name='twitter' placeholder='http://alfn.netlify.app' />
+                        </div>
+                    </div>
+                    <div className={formStyle.form_box_input}>
+                        <legend htmlFor="instagram">Instagram</legend>
+                        <div className={formStyle.form_box_input_box}>
+                            <div className={formStyle.form_box_input_box_icon}>
+                                <TiSocialInstagram />
+                            </div>
+                            <input type="text" name='instagram' placeholder='http://alfn.netlify.app' />
+                        </div>
+                    </div>
                 </div>
             </div>
 

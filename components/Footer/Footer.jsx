@@ -67,7 +67,7 @@ const Footer = () => {
                     </h3>
 
                     <div className={Style.subscribe_box}>
-                        <input type='email' placeholder='Enter your email *' />
+                        <input type='email' placeholder='Enter your email *' name='email' />
                         <RiSendPlaneFill className={Style.subscribe_box_send} />
                     </div>
 
