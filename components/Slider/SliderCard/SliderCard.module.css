@@ -13,6 +13,7 @@
 }
 
 .sliderCard_box_img_img {
+    height: 50vh;
     width: 100%;
     border-radius: 2rem;
     object-fit: cover;
@@ -92,6 +93,33 @@
 
     .sliderCard_box_price_time p {
         font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-device-width: 3760px) and (max-device-width: 780px) {
+    .sliderCard {
+        padding: .5rem;
+    }
+
+    .sliderCard_box_title p {
+        font-size: 1rem;
+    }
+
+    .sliderCard_box_price_box {
+        padding: .2rem;
+    }
+
+    .sliderCard_box_price_time p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (min-device-width: 780px) and (max-device-width: 1024px) {
+    .sliderCard_box_img_img {
+        height: 20vh;
+
     }
 
 }

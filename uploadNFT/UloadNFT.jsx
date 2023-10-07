@@ -98,7 +98,7 @@ const UloadNFT = () => {
                     </p>
                 </div>
 
-                <div className={Style.form_box_input}>
+                <div className={formStyle.form_box_input}>
                     <legend htmlFor="description">Description</legend>
                     <textarea name="description" id="" cols="30" rows="6"
                         placeholder='Write something about yourself in a few words'
@@ -151,7 +151,9 @@ const UloadNFT = () => {
                     <div className={formStyle.form_box_input}>
                         <legend htmlFor="twitter">Twitter</legend>
                         <div className={formStyle.form_box_input_box}>
-                            <TiSocialTwitter />
+                            <div className={formStyle.form_box_input_box_icon}>
+                                <TiSocialTwitter />
+                            </div>
                             <input type="text" name='twitter' placeholder='http://alfn.netlify.app' />
                         </div>
                     </div>

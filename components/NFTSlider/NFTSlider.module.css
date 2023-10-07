@@ -25,6 +25,7 @@
 .NFTSlider_box_left h2 {
     font-size: 3rem;
     line-height: 0;
+    margin: 1rem;
 }
 
 .NFTSlider_box_right_box {
@@ -100,7 +101,7 @@
     gap: 3rem;
     text-align: center;
     padding: 1rem 0rem 3rem 0;
-    border-botom: 1px solid var(--shadow-dark-color);
+    border-bottom: 1px solid var(--shadow-dark-color);
 }
 
 .NFTSlider_box_left_bidding_box_auction {
@@ -127,6 +128,7 @@
 .NFTSlider_box_left_sliderBtn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     font-size: 2rem;
     margin-top: 3rem;
@@ -172,21 +174,23 @@
 }
 
 /* Problem at 1040px */
-@media screen and (max-screen-width: 1600px) {
+@media screen and (max-width: 1600px) {
     .NFTSlider_box {
         width: 90%;
         padding-top: 28rem;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
         gap: 1rem;
     }
 
     .NFTSlider_box_left {
-        height: 120vh;
+        height: 80vh;
         padding: 1.5rem;
     }
 
     .NFTSlider_box_right_box {
-        margin-top: -70rem;
+        margin-top: -10rem;
+        height: 80vh;
+        width: 100%;
     }
 
     .NFTSlider_box_left_creator {
@@ -214,4 +218,9 @@
     .NFTSlider_box_left_bidding_box_timer_item {
         font-size: 1rem;
     }
+
+    /* .NFTSlider_box_right_box_like {
+        top: 4rem;
+        right: 8rem;
+    } */
 }

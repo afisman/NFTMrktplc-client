@@ -76,9 +76,7 @@ const NFTSlider = () => {
         }
     }, [idNumber]);
 
-    // useEffect(() => {
-    //     inc()
-    // }, [])
+
     return (
         <div className={Style.NFTSlider}>
             <div className={Style.NFTSlider_box}>
@@ -142,20 +140,20 @@ const NFTSlider = () => {
                             </div>
                         </div>
                         <div className={Style.NFTSlider_box_left_button}>
-                            <Button btnName='Place' handleClick={() => { }} />
+                            <Button btnName='Place' handleClick={() => { }} classStyle={Style.nft_button} />
                             <Button btnName='View' handleClick={() => { }} />
 
                         </div>
+                        <div className={Style.NFTSlider_box_left_sliderBtn}>
+                            <TbArrowBigLeftLines className={Style.NFTSlider_box_left_sliderBtn_icon}
+                                onClick={() => dec()}
+                            />
+                            <TbArrowBigRightLine className={Style.NFTSlider_box_left_sliderBtn_icon}
+                                onClick={() => inc()}
+                            />
+                        </div>
                     </div>
 
-                    <div className={Style.NFTSlider_box_left_sliderBtn}>
-                        <TbArrowBigLeftLines className={Style.NFTSlider_box_left_sliderBtn_icon}
-                            onClick={() => dec()}
-                        />
-                        <TbArrowBigRightLine className={Style.NFTSlider_box_left_sliderBtn_icon}
-                            onClick={() => inc()}
-                        />
-                    </div>
                 </div>
                 <div className={Style.NFTSlider_box_right_box}>
                     <Image

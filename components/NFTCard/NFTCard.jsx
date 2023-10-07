@@ -21,10 +21,8 @@ const NFTCard = () => {
     const likeNft = () => {
 
         if (!like) {
-            console.log('I am liking');
             setLike(true);
         } else {
-            console.log('I am removing like');
             setLike(false);
         }
     }

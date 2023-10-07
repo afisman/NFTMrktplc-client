@@ -48,29 +48,32 @@ const BigAudioCard = () => {
                     </div>
                 </div>
                 <div className={Style.bigAudioCard_box_player}>
-                    <Image
-                        src={images.nft_image_1}
-                        alt='music'
-                        // width={200}
+                    <div>
 
-                        className={Style.bigAudioCard_box_player_img}
+                        <Image
+                            src={images.nft_image_1}
+                            alt='music'
+                            // width={200}
 
-                    />
-                    <div className={Style.bigAudioCard_box_musicPlayer}
-                        onClick={() => playMusic()}
-                    >
-                        {/* Check 7:20 */}
-                        {play ? (
-                            <div className={Style.bigAudioCard_box_musicPlayer_icon}>
-                                <TbPlayerPause />
-                            </div>
-                        )
-                            :
-                            (
+                            className={Style.bigAudioCard_box_player_img}
+
+                        />
+                        <div className={Style.bigAudioCard_box_musicPlayer}
+                            onClick={() => playMusic()}
+                        >
+                            {/* Check 7:20 */}
+                            {play ? (
                                 <div className={Style.bigAudioCard_box_musicPlayer_icon}>
-                                    <TbPlayerPlay />
+                                    <TbPlayerPause />
                                 </div>
-                            )}
+                            )
+                                :
+                                (
+                                    <div className={Style.bigAudioCard_box_musicPlayer_icon}>
+                                        <TbPlayerPlay />
+                                    </div>
+                                )}
+                        </div>
                     </div>
                 </div>
             </div>

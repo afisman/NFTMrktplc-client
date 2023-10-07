@@ -16,9 +16,7 @@ const Category = () => {
                             src={el}
                             className={Style.category_box_img}
                             alt='Category image'
-                            width={350}
-                            height={150}
-                        // objectFit='cover'
+
                         />
 
                         <div className={Style.category_box_title}>
