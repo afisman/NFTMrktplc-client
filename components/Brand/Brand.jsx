@@ -12,8 +12,7 @@ const Brand = () => {
                 <div className={Style.brand_box_left}>
                     <Image src={images.creatorbackground1}
                         alt='brand logo'
-                        width={100}
-                        height={100}
+
                         className={Style.brand_box_left_img}
                     />
                     <h1>Test Headline for brand</h1>
@@ -29,8 +28,7 @@ const Brand = () => {
                     <Image
                         src={images.nft_image_3}
                         alt='brand logo'
-                        width={800}
-                        height={600}
+
                         className={Style.brand_box_right_img}
                     />
                 </div>

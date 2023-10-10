@@ -34,10 +34,14 @@
 
 .brand_box_left_img {
     border-radius: 1rem;
+    width: 100%;
+    height: auto;
 }
 
 .brand_box_right_img {
     border-radius: 2rem;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width:35em) {

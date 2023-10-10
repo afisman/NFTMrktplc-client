@@ -27,8 +27,7 @@ const SmallAudioCard = () => {
                 <Image
                     src={images.nft_image_2}
                     alt='music'
-                    width={100}
-                    height={100}
+
                     className={Style.smallAudioCard_box_img}
                 />
                 <div className={Style.smallAudioCard_box_info}>
