@@ -20,6 +20,8 @@ const UloadNFT = () => {
     const [royalties, setRoyalties] = useState('');
     const [fileSize, setFileSize] = useState('');
     const [category, setCategory] = useState('');
+    const [properties, setProperties] = useState('');
+
 
     const categoryArray = [
         {
@@ -140,32 +142,36 @@ const UloadNFT = () => {
                 </div>
                 <div className={formStyle.form_box_input_social}>
                     <div className={formStyle.form_box_input}>
-                        <legend htmlFor="facebook">Facebook</legend>
+                        <label htmlFor="Royalties">Royalties</label>
                         <div className={formStyle.form_box_input_box}>
                             <div className={formStyle.form_box_input_box_icon}>
-                                <TiSocialFacebook />
+                                <FaPercent />
                             </div>
-                            <input type="text" name='facebook' placeholder='http://alfn.netlify.app' />
+                            <input type="text" name='Royalties' placeholder='20%' onChange={(e) => setRoyalties(e.target.value)} />
                         </div>
                     </div>
                     <div className={formStyle.form_box_input}>
-                        <legend htmlFor="twitter">Twitter</legend>
+                        <label htmlFor="Size">Size</label>
                         <div className={formStyle.form_box_input_box}>
                             <div className={formStyle.form_box_input_box_icon}>
-                                <TiSocialTwitter />
+                                <MdOutlineAttachFile />
                             </div>
-                            <input type="text" name='twitter' placeholder='http://alfn.netlify.app' />
+                            <input type="text" name='size' placeholder='165MB' onChange={(e) => setFileSize(e.target.value)} />
                         </div>
                     </div>
                     <div className={formStyle.form_box_input}>
-                        <legend htmlFor="instagram">Instagram</legend>
+                        <label htmlFor="Properties">Properties</label>
                         <div className={formStyle.form_box_input_box}>
                             <div className={formStyle.form_box_input_box_icon}>
-                                <TiSocialInstagram />
+                                <AiTwotonePropertySafety />
                             </div>
-                            <input type="text" name='instagram' placeholder='http://alfn.netlify.app' />
+                            <input type="text" name='Properties' placeholder='Properties' onChange={(e) => setProperties(e.target.value)} />
                         </div>
                     </div>
+                </div>
+
+                <div className={Style.upload_box_btn}>
+                    <Button btnName='Upload' handleClick={() => { }} classStyle={Style.upload_box_btn_style} />
                 </div>
             </div>
 
