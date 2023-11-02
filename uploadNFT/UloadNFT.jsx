@@ -119,10 +119,10 @@ const UloadNFT = () => {
                             ${active == i + 1 ? Style.active : ""}`}
 
                                 key={i + 1}
-                                onClick={() => {
-                                    setActive(i + 1)
+                                onClick={() => (
+                                    setActive(i + 1),
                                     setCategory(el.category)
-                                }}
+                                )}
                             >
                                 <div className={Style.UploadNFT_box_slider_box}>
                                     <div className={Style.UploadNFT_box_slider_box_img}>
