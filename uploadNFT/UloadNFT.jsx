@@ -171,8 +171,10 @@ const UloadNFT = () => {
                     </div>
                 </div>
 
-                <div className={Style.upload_box_btn}>
-                    <Button btnName='Upload' handleClick={() => { }} classStyle={Style.upload_box_btn_style} />
+                <div className={Style.UploadNFT_box_btn}>
+                    <Button btnName='Upload' handleClick={() => { }} classStyle={Style.UploadNFT_box_btn_style} />
+                    <Button btnName='Preview' handleClick={() => { }} classStyle={Style.UploadNFT_box_btn_style} />
+
                 </div>
             </div>
 
