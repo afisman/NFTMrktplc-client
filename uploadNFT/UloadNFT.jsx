@@ -136,7 +136,7 @@ const UloadNFT = () => {
                                         <TiTick />
                                     </div>
                                 </div>
-                                <p>Crypto Legend-Professor</p>
+                                <p>Crypto Legend-{el.category}</p>
                             </div>
                         ))}
                     </div>
@@ -174,7 +174,6 @@ const UloadNFT = () => {
                 <div className={Style.UploadNFT_box_btn}>
                     <Button btnName='Upload' handleClick={() => { }} classStyle={Style.UploadNFT_box_btn_style} />
                     <Button btnName='Preview' handleClick={() => { }} classStyle={Style.UploadNFT_box_btn_style} />
-
                 </div>
             </div>
 
