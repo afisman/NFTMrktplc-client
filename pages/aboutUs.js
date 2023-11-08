@@ -73,6 +73,7 @@ const aboutUs = () => {
                     </div>
                 </div>
             </div>
+            <Brand />
         </div>
     )
 }
